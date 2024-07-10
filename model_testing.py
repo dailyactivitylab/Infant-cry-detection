@@ -4,7 +4,6 @@ from pyAudioAnalysis import audioBasicIO
 from pyAudioAnalysis import ShortTermFeatures
 from joblib import load
 
-
 def preprocess_audio(file_path):
     y, sr = librosa.load(file_path, sr=None)
     duration = librosa.get_duration(y=y, sr=sr)
